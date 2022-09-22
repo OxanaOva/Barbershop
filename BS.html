@@ -35,6 +35,37 @@
               <path fill-rule="evenodd" clip-rule="evenodd" d="M3.1 6 3.57.9l.08-.9h8.67l.1.9.48 5.1H15.63l-.14 1.12-1 8-.1.88H1.61l-.11-.88-1-8L.37 6H3.1Zm2 0h5.8l-.38-4H5.48L5.1 6Zm-1.72 8-.75-6h10.74l-.75 6H3.38ZM8.5 9.5v3h2v-3h-2Zm-3 3v-3h2v3h-2Z"/></svg>
             <span class="visually-hidden">Корзина</span>
           </a>
+          <div class="popover popover-cart popover-open">
+            <button class="popover-close-button button button-light">
+              2
+              <span class="visually-hidden">Закрыть</span>
+            </button>
+            <div class="popover-content">
+              <h2 class="popover-title">Корзина</h2>
+              <ul class="cart-item-list">
+                <li class="cart-item">
+                  <p class="cart-item-title">Стрижка машинкой</p>
+                  <p class="cart-item-price">800 ₽</p>
+                    <button type="button" class="cart-item-button button">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.41989 1L3.7034 0.503861L3.99132 0H4.57164H11.4288H12.0091L12.297 0.503861L12.5805 1H14.5002H15.6288L15.4929 2.12042L13.916 15.1204L13.8093 16H12.9233H3.07714H2.19111L2.08442 15.1204L0.507491 2.12042L0.371582 1H1.50021H3.41989ZM3.96317 14L2.62885 3H13.3716L12.0373 14H3.96317ZM9.00276 4.92875L8.50276 11.9288L10.4977 12.0712L10.9977 5.07125L9.00276 4.92875ZM5.50276 12.0712L5.00276 5.07125L6.99767 4.92875L7.49767 11.9288L5.50276 12.0712Z" fill="white"/>
+                        </svg>
+                    <span class="visually-hidden">Удалить из корзины</span>
+                  </button>
+                </li>
+                <li class="cart-item">
+                  <p class="cart-item-title">Стрижка усов</p>
+                  <p class="cart-item-price">1200 ₽</p>
+                    <button type="button" class="cart-item-button button">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.41989 1L3.7034 0.503861L3.99132 0H4.57164H11.4288H12.0091L12.297 0.503861L12.5805 1H14.5002H15.6288L15.4929 2.12042L13.916 15.1204L13.8093 16H12.9233H3.07714H2.19111L2.08442 15.1204L0.507491 2.12042L0.371582 1H1.50021H3.41989ZM3.96317 14L2.62885 3H13.3716L12.0373 14H3.96317ZM9.00276 4.92875L8.50276 11.9288L10.4977 12.0712L10.9977 5.07125L9.00276 4.92875ZM5.50276 12.0712L5.00276 5.07125L6.99767 4.92875L7.49767 11.9288L5.50276 12.0712Z" fill="white"/>
+                        </svg>
+                    <span class="visually-hidden">Удалитьиз корзины</span>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
         </li>
         <li class="navigation-item">
           <a class="navigation-link navigation-link-login" href="#">
@@ -88,38 +119,44 @@
           </li>
         </ul>
         <a class="button button-all" href="#">Посмотреть все</a>
-      </section>
+      </section>        
       <section class="gallery">
         <h2 class="gallery-title">Фотогалерея</h2>
-        <img class="slider-image" src="images/gallery_1.jpg" alt="Примеры работ" width="390" height="250">
-        <button class="slider-button slider-prev" type="button">
-          <span class="visually-hidden">Предыдущее фото</span>
-        </button>
-        <button class="slider-button slider-next" type="button">
-          <span class="visually-hidden">Следующее фото</span>
-        </button>
-        <ol class="slider-pagination">
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button slider-pagination-button-current" type="button">
-              <span class="visually-hidden">1 фото</span>
-            </button>
-          </li>
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button" type="button">
-              <span class="visually-hidden">2 фото</span>
-            </button>
-          </li>
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button" type="button">
-              <span class="visually-hidden">3 фото</span>
-            </button>
-          </li>
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button" type="button">
-            <span class="visually-hidden">4 фото</span>
-            </button>
-          </li>
-        </ol>
+        <div class="slider">
+          <div class="slider-wrapper">
+            <img class="slider-image" src="images/gallery_1.jpg" alt="Примеры работ" width="390" height="250">
+            <div class="slider-controls">
+              <button class="slider-button slider-prev" type="button">
+                <span class="visually-hidden">Предыдущее фото</span>
+              </button>
+              <button class="slider-button slider-next" type="button">
+                <span class="visually-hidden">Следующее фото</span>
+              </button>
+            </div>
+            <ol class="slider-pagination">
+              <li class="slider-pagination-item">
+                <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                  <span class="visually-hidden">1 фото</span>
+                </button>
+              </li>
+              <li class="slider-pagination-item">
+                <button class="slider-pagination-button" type="button">
+                  <span class="visually-hidden">2 фото</span>
+                </button>
+              </li>
+              <li class="slider-pagination-item">
+                <button class="slider-pagination-button" type="button">
+                  <span class="visually-hidden">3 фото</span>
+                </button>
+              </li>
+              <li class="slider-pagination-item">
+                <button class="slider-pagination-button" type="button">
+                <span class="visually-hidden">4 фото</span>
+                </button>
+              </li>
+            </ol>
+          </div>  
+        </div>
       </section>
       </div>
       <div class="index-columns">
@@ -140,34 +177,38 @@
         <a class="button button-feedback" href="#">Обратная связь</a></p>
       </section>
       <section class="appointment">
-      <h2 class="appointment-title">Записаться</h2>
-      <p class="appointment-info">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони.</p>
-      <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
-        <p class="field-group appointment-form-date">
-        <label class="form-label" for="appointment-date">Дата
-          <button class="info">
-          <span class="visually-hidden">Посмотреть дополнительную информацию</span></button>
-        </label>
-        <input type="text" id="appointment-date" name="appointment-date" placeholder="01.01.2020">
-        </p>
-        <p class="field-group appointment-form-time">
-        <label class="form-label" for="appointment-time">Время
-          <button class="info">
-          <span class="visually-hidden">Посмотреть дополнительную информацию</span>
-        </button>
-        </label>
-        <input type="text" id="appointment-time" name="appointment-time" placeholder="10:00">
-        </p>
-        <p class="field-group appointment-form-phone">
-        <label class="form-label" for="appointment-phone">Телефон</label>
-        <input class="field" type="text" id="appointment-phone" name="appointment-phone" placeholder="+7 800 000-00-00">
-        </p>
-        <p class="field-group appointment-form-name">
-        <label class="form-label" for="appointment-name">Ваше имя</label>
-        <input class="field" type="text" id="appointment-name" name="appointment-name">
-        </p>
-        <button class="button appointment-submit" type="submit">Записаться</button>
-      </form>
+        <h2 class="appointment-title">Записаться</h2>
+        <p class="appointment-info">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони.</p>
+        <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
+          <p class="field-group appointment-form-date">
+            <span class="form-label form-label-icon">
+              <label for="appointment-date">
+                Дата</label>
+              <button class="info" type="button">
+                <span class="visually-hidden">Посмотреть дополнительную информацию</span></button>
+            </span>
+            <input class="field" type="text" id="appointment-date" name="appointment-date" placeholder="01.01.2020">
+          </p>
+          <p class="field-group appointment-form-time">
+            <span class="form-label form-label-icon">
+              <label for="appointment-time">
+                Время</label>
+              <button class="info" type="button">
+                <span class="visually-hidden">Посмотреть дополнительную информацию</span>
+              </button>
+            </span>
+          <input class="field" type="text" id="appointment-time" name="appointment-time" placeholder="10:00">
+          </p>
+          <p class="field-group appointment-form-phone">
+          <label class="form-label" for="appointment-phone">Телефон</label>
+          <input class="field" type="text" id="appointment-phone" name="appointment-phone" placeholder="+7 800 000-00-00">
+          </p>
+          <p class="field-group appointment-form-name">
+          <label class="form-label" for="appointment-name">Ваше имя</label>
+          <input class="field" type="text" id="appointment-name" name="appointment-name">
+          </p>
+          <button class="button appointment-submit" type="submit">Записаться</button>
+        </form>
       </section>
       </div>
     </div>
@@ -218,5 +259,35 @@
       </section>
     </div>      
   </footer>
+  <div class="modal-container modal-container-close">
+    <div class="modal modal-auth">
+      <button class="modal-close-button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <section class="modal-content">
+        <h2 class="modal-title">Личный кабинет</h2>
+        <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+          <p class="field-group">
+            <label class="visually-hidden" for="auth-login">Логин</label>
+            <input class="auth-form-field field" type="text" id="auth-login" name="auth-login" placeholder="Логин">
+          </p>
+          <p class="field-group">
+            <label class="visually-hidden" for="auth-password">Логин</label>
+            <input class="auth-form-field field" type="password" id="auth-password" name="auth-password" placeholder="Пароль">
+          </p>
+          <p class="field-group auth-form-user-options">
+            <label class="auth-form-checkbox control">
+              <input class="visually-hidden control-input" type="checkbox" name="firm-storе">
+              <span class="control-mark"></span>
+              <span class="control-label">Запомнить меня</span>
+            </label>
+            <a class="auth-form-recovery" href="#">Забыл пароль</a>
+          </p>
+          <button class="button auth-form-button" type="submit">Войти</button>
+          <a class="button auth-form-register" href="#">Регистрация</a>
+        </form>
+      </section>
+    </div>
+  </div>
 </body>
 </html>
